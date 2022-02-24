@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: black;
+}
+
+
+/* estilos para  la barra de scroll */
+
+.scroll-bar::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.scroll-bar::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+.scroll-bar::-webkit-scrollbar-button:increment,
+.scroll-bar::-webkit-scrollbar-button {
+    display: none;
+}
+
+.scroll-bar::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid grey;
+}
+
+.scroll-bar::-webkit-scrollbar-track {
+    border-radius: 10px;
+}

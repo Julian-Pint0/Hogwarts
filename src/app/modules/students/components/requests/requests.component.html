@@ -1,0 +1,13 @@
+<div class="row g-0 mt-5">
+
+    <h1 class="text-center text-white">Request list</h1>
+
+    <div *ngIf="data.length > 0; else option">
+        <app-table [data]="data" [columns]="columns"> </app-table>
+    </div>
+    <ng-template #option>
+        <h3 class="text-center text-white mt-5"> No requests currently </h3>
+    </ng-template>
+
+
+</div>

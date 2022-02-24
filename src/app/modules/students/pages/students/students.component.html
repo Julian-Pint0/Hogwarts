@@ -1,0 +1,20 @@
+<div class="row g-0 mt-5">
+
+    <h1 class="text-center text-white"> Students</h1>
+
+    <div class="row g-3 justify-content-center justify-content-md-end">
+        <div class="col-auto  mt-5">
+            <button type="button" class="btn btn-dark" mat-button (click)="openDialog()">Add request</button>
+        </div>
+        <div class="col-auto mt-5">
+            <button type="button" class="btn btn-dark" mat-button routerLink="requests">view requests</button>
+        </div>
+    </div>
+
+    <div class="row g-0 mt-4">
+        <div class="col-12">
+            <app-table [data]="data" [columns]="columns"> </app-table>
+        </div>
+    </div>
+
+</div>

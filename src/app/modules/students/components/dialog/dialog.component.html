@@ -1,0 +1,39 @@
+<div class="form-cont">
+    <form [formGroup]="form" (ngSubmit)="save()">
+        <div class="mb-4">
+            <label for="inputName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="inputName" [ngClass]="{ 'is-invalid': nameIsValid }" formControlName="name">
+            <div class="invalid-feedback">
+                El nombre es requerido y debe tener al menos 5 caracteres
+            </div>
+        </div>
+        <div class="mb-4">
+            <label for="inputLastName" class="form-label">Lastname</label>
+            <input type="text" class="form-control" id="inputLastName" [ngClass]="{ 'is-invalid': lastNameIsValid }" formControlName="lastName">
+            <div class="invalid-feedback">
+                El apellido es requerido y debe tener al menos 5 caracteres
+            </div>
+        </div>
+        <div class="mb-4">
+            <label for="inputGender" class="form-label">Gender</label>
+            <select class="form-select" aria-label="Default select example" formControlName="gender" id="inputGender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <label for="inputHouse" class="form-label">House</label>
+            <select class="form-select" aria-label="Default select example" formControlName="house" id="inputHouse">
+                <option value="Gryffindor">Gryffindor</option>
+                <option value="Hufflepuff">Hufflepuff</option>
+                <option value="Ravenclaw">Ravenclaw</option>
+                <option value="Slytherin">Slytherin</option>
+            </select>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-dark mt-2" [ngClass]="{ 'disabled': form.invalid }">Send</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,48 @@
+div {
+    max-height: 200px;
+    min-height: 500px;
+    overflow: auto;
+}
+
+div table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.img-figure {
+    height: 60px;
+    width: 60px;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+
+/* Estilos para modificar los colores del filtro en la tabla */
+
+::ng-deep .mat-focused .mat-form-field-label {
+    color: white !important;
+}
+
+::ng-deep.mat-form-field-underline {
+    background-color: white !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+    background-color: white !important;
+}
+
+input {
+    color: white;
+    caret-color: white;
+}
